@@ -1,0 +1,16 @@
+com\forestry\repository\InspectionDataRepository.class
+com\forestry\model\SystemLog.class
+com\forestry\controller\DeviceController.class
+com\forestry\controller\AreaAnalysisController.class
+com\forestry\service\SystemMonitorService.class
+com\forestry\service\AnalysisAlertService.class
+com\forestry\service\InspectionDataService.class
+com\forestry\model\AnalysisResult.class
+com\forestry\service\AreaAnalysisService.class
+com\forestry\controller\SystemMonitorController.class
+com\forestry\service\MonitoringService.class
+com\forestry\repository\AnalysisResultRepository.class
+com\forestry\repository\CacheRepository.class
+com\forestry\repository\SystemLogRepository.class
+com\forestry\controller\AnalysisAlertController.class
+com\forestry\controller\InspectionDataController.class

@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: forestry-inspection-platform
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/forestry_inspection
+      database: forestry_inspection
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+      timeout: 2000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-wait: -1ms
+          max-idle: 8
+          min-idle: 0
+  neo4j:
+    uri: bolt://localhost:7687
+    authentication:
+      username: neo4j
+      password: mql20040229
+  knife4j:
+    enable: true
+    setting:
+      language: zh-CN
+      enable-swagger-models: true
+      enable-document-manage: true
+      enable-version: true
+      enable-relay-parameters: true
+      enable-filter-multipart-apimodel: true
+      enable-request-cache: true
+      enable-filter-multipart-apimodel-property: true
+      custom-field: forestry-theme
+    cors: true
+    production: false
+server:
+  port: 8080
+  servlet:
+    context-path: /forestry
+logging:
+  level:
+    com.forestry: DEBUG
+    org.springframework.data.mongodb.core: INFO
+    org.springframework.data.redis: INFO
